@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model File {
+  id            String   @id @default(uuid())
+  url           String
+  original_name String
+  name          String
+  media_type    String
+  lang          String
+  vacancy_id    String
+  vacancy       Vacancy  @relation(fields: [vacancy_id], references: [id])
+  created_at    DateTime @default(now())
+  updated_at    DateTime @default(now()) @updatedAt
+}
+
+model Vacancy {
+  id              String   @id @default(uuid())
+  title_ka        String
+  title_eng       String
+  description_ka  String
+  description_eng String
+  files           File[]
+  created_at      DateTime @default(now())
+  updated_at      DateTime @default(now()) @updatedAt
+}
+
+model FormSubmission {
+  id              String   @id @default(uuid())
+  first_name      String
+  last_name       String
+  description     String
+  email           String
+  subject         String
+  description_eng String
+  created_at      DateTime @default(now())
+  updated_at      DateTime @default(now()) @updatedAt
+}
