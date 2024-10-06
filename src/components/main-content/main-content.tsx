@@ -50,7 +50,7 @@ export default function MainContent(): React.JSX.Element {
       }}
     >
       <video ref={videoRef} autoPlay muted loop className={styles.videoBackground}>
-        <source src="https://firebasestorage.googleapis.com/v0/b/georaffal.appspot.com/o/Service%20East%20Video.mp4?alt=media&token=06c8e6a0-786f-41c9-bd2f-406b1a327893" type="video/mp4" />
+        <source src="https://firebasestorage.googleapis.com/v0/b/service-east.appspot.com/o/Service%20East%20Video.mp4?alt=media&token=5888e1ca-59f9-4016-8b87-ba81f2f47d23" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <Box
