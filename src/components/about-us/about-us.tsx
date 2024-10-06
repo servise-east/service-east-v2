@@ -191,6 +191,7 @@ If you share our vision and goals, and are ready to be part of a dynamic and amb
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'contain',
                 backgroundPosition: 'right',
+                marginBottom: '120px',
               }}
             >
               {teamData.map((item) => (

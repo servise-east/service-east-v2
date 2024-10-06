@@ -127,7 +127,7 @@ export default function Footer(): React.JSX.Element {
         >
           <a
             className={styles.smallInfo}
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/profile.php?id=61566968096988"
             target="_blank"
             rel="noreferrer"
           >
@@ -135,7 +135,7 @@ export default function Footer(): React.JSX.Element {
           </a>
           <a
             className={styles.smallInfo}
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/serviceeast.ge/"
             target="_blank"
             rel="noreferrer"
           >

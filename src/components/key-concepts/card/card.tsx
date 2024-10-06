@@ -32,7 +32,7 @@ export default function Card(props: CardProps): React.JSX.Element {
         backgroundImage: `url(${image})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'left',
-        backgroundSize: isTeam ? 'contain' : 'cover',
+        backgroundSize: isTeam ? 'cover' : 'cover',
         cursor: 'pointer',
         filter: 'grayscale(100%)',
         transition: 'filter 0.3s ease-in-out',
